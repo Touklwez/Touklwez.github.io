@@ -1,0 +1,60 @@
+/* ====
+  Imports
+====*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+  font-family: signature;
+ src: url(../../assets/homeAssets/SurfshirtSignature.ttf);
+}
+
+
+
+
+#assinatura{
+  font-family: signature;
+  font-size: 60px;
+  color: black;
+  text-decoration: none;
+  top: 0;
+  right: 0;
+  margin: 1vw 3vw 0vw 0vh;
+}
+
+
+#main{
+  height: 100vh;
+  margin-left: 10vw;
+}
+#main h1{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 6rem;
+  color: var(--mainFontColor);
+}
+#main p {
+  width: 70%;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  color: var(--mainFontColor);
+}
+#main button{
+  color: var(--mainFontColor);
+  background-color: none;
+  padding: 15px 25px 15px 25px;
+  margin-top: 4vh;
+  border: 2px solid var(--mainFontColor);
+  transition-duration: 1s;
+}
+#main button:hover{
+  color: white;
+  background-color: #161616;
+  -webkit-box-shadow: -6px -6px 30px 0px #18181877;
+  -moz-box-shadow:    -6px -6px 30px 0px #18181877;
+  box-shadow:         -6px -6px 30px 0px #18181877;
+}
+#main img{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

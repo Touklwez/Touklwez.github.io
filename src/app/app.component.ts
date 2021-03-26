@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Final';
+
 }
+
+window.addEventListener('load', (event) => {
+
+  setTimeout(function() {
+    document.getElementById("loading").style.display  = "none";
+  }, 0);
+
+});
+
+

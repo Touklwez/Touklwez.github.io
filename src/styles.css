@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face{
+  font-family: signature;
+ src: url(../src/assets/homeAssets/SurfshirtSignature.ttf);
+}
+@font-face{
+  src: url(../src/assets/homeAssets/Poppins-Light.ttf);
+  font-family: texto;
+}
+
+
+:root{
+  --mainFontColor: #181818;
+}
+
+
+body{
+  background-color: #efefef;
+  cursor: crosshair;
+}

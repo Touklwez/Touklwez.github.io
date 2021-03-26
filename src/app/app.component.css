@@ -1,0 +1,24 @@
+@font-face{
+  font-family: signature;
+ src: url(../assets/homeAssets/SurfshirtSignature.ttf);
+}
+
+
+:root{
+  --mainFontColor: #181818;
+}
+
+
+
+#content{
+  padding-left: 0vw;
+  display: flex;
+}
+
+#loading{
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background-color: red;
+  z-index: 999;
+}
