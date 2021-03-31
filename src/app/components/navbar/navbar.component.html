@@ -1,7 +1,9 @@
-<nav class="d-flex flex-column align-items-center justify-content-center">
 
+
+
+<nav class="flex-sm-row flex-md-column  align-items-md-center justify-content-md-center align-content-center justify-content-around">
     <svg class="navSVG atual" id="home" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"  [routerLink]="['/home']" routerLinkActive="active">
+    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"  [routerLink]="['/home']" routerLinkActive="active" (click)="FecharNav()">
       <g>
       <g>
       <path d="M506.555,208.064L263.859,30.367c-4.68-3.426-11.038-3.426-15.716,0L5.445,208.064
@@ -51,7 +53,7 @@
       </g>
     </svg>
 
-    <svg class="navSVG" id="teste"  xmlns="http://www.w3.org/2000/svg" width="35" height="22.814" viewBox="0 0 35 22.814" [routerLink]="['/about']" routerLinkActive="active">
+    <svg class="navSVG"  xmlns="http://www.w3.org/2000/svg" width="35" height="22.814" viewBox="0 0 35 22.814" (click)="FecharNav()" [routerLink]="['/about']" routerLinkActive="active">
       <g id="id-card" transform="translate(0 0)">
         <g id="Grupo_225" data-name="Grupo 225" transform="translate(0 0)">
           <g id="Grupo_224" data-name="Grupo 224">
@@ -81,7 +83,7 @@
       </g>
     </svg>
 
-    <svg  class="navSVG" id="trabalhos" xmlns="http://www.w3.org/2000/svg" width="35" height="27.221" viewBox="0 0 35 27.221"  routerLinkActive="active">
+    <svg  class="navSVG" id="trabalhos" xmlns="http://www.w3.org/2000/svg" width="35" height="27.221" viewBox="0 0 35 27.221"  routerLinkActive="active" (click)="FecharNav()">
       <g id="inbox" transform="translate(-2 -29)">
         <g id="Grupo_235" data-name="Grupo 235" transform="translate(14.585 48.856)">
           <g id="Grupo_234" data-name="Grupo 234">
@@ -96,7 +98,7 @@
       </g>
     </svg>
 
-    <svg class="navSVG" id="contactar"  xmlns="http://www.w3.org/2000/svg" width="35" height="32.247" viewBox="0 0 35 32.247" routerLinkActive="active">
+    <svg class="navSVG" id="contactar"  xmlns="http://www.w3.org/2000/svg" width="35" height="32.247" viewBox="0 0 35 32.247" routerLinkActive="active" (click)="FecharNav()">
       <g id="Grupo_240" data-name="Grupo 240" transform="translate(0 11.07)">
         <g id="Grupo_239" data-name="Grupo 239">
           <path id="Caminho_18" data-name="Caminho 18" d="M34.976,183.647a1.573,1.573,0,0,0-1.573-1.571h0l-31.829.044A1.573,1.573,0,0,0,0,183.695l.025,17.987A1.575,1.575,0,0,0,1.6,203.253h0l31.829-.044A1.573,1.573,0,0,0,35,201.634Zm-3.3,0L17.5,193.5,3.3,183.69Zm-8.264,11.431,8.453,6.556-28.748.04,8.5-6.6a.786.786,0,1,0-.964-1.243L1.6,200.864l-.023-16.455,15.482,10.7a.787.787,0,0,0,.9,0L33.4,184.365l.024,16.5-9.053-7.022a.787.787,0,0,0-.964,1.243Z" transform="translate(-0.001 -182.076)" fill="#fff"/>
@@ -109,4 +111,11 @@
       </g>
     </svg>
 </nav>
+
+  <!--Burger Icon-->
+  <svg id="hamburger" class="navSVG" viewBox="0 0 100 80" width="40" height="40" (click)="callNav()">
+    <rect class="close burger-line" width="100" height="20"></rect>
+    <rect class="close burger-line" y="30" width="100" height="20"></rect>
+    <rect class="close burger-line" y="60" width="100" height="20"></rect>
+  </svg>
 

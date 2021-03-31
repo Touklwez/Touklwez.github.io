@@ -10,11 +10,22 @@
 
 
 
+body{
+  background-image: url(../../assets/homeAssets/wallpaper.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#background{
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
 
 #assinatura{
   font-family: signature;
   font-size: 60px;
-  color: black;
+  color: white;
   text-decoration: none;
   top: 0;
   right: 0;
@@ -23,31 +34,34 @@
 
 
 #main{
+  position: relative;
   height: 100vh;
   margin-left: 10vw;
+  z-index: 900;
+  width: 90vw;
 }
 #main h1{
   font-family: 'Bebas Neue', cursive;
   font-size: 6rem;
-  color: var(--mainFontColor);
+  color: white;
 }
 #main p {
-  width: 70%;
+  width: 35%;
   font-size: 1.5rem;
   margin-bottom: 0;
-  color: var(--mainFontColor);
+  color: white;
 }
 #main button{
-  color: var(--mainFontColor);
-  background-color: none;
-  padding: 15px 25px 15px 25px;
+  color: white;
+  background-color: #16161600;
+  padding: 10px 20px 10px 20px;
   margin-top: 4vh;
-  border: 2px solid var(--mainFontColor);
+  border: 2px solid white;
   transition-duration: 1s;
 }
 #main button:hover{
-  color: white;
-  background-color: #161616;
+  color: black;
+  background-color: white;
   -webkit-box-shadow: -6px -6px 30px 0px #18181877;
   -moz-box-shadow:    -6px -6px 30px 0px #18181877;
   box-shadow:         -6px -6px 30px 0px #18181877;
@@ -58,3 +72,5 @@
   bottom: 0;
   left: 0;
 }
+
+

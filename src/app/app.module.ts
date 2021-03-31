@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HostListener, Component } from "@angular/core";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,11 +17,11 @@ import { AcercaComponent } from './acerca/acerca.component';
     HomeComponent,
     TrabalhosComponent,
     LoaderComponent,
-    AcercaComponent
+    AcercaComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

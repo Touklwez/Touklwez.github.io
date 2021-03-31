@@ -2,23 +2,25 @@
   font-family: signature;
  src: url(../assets/homeAssets/SurfshirtSignature.ttf);
 }
-
+@font-face{
+  font-family: titles;
+ src: url(../assets/fonts/BebasNeue.ttf);
+}
 
 :root{
   --mainFontColor: #181818;
 }
 
 
-
 #content{
   padding-left: 0vw;
   display: flex;
+  max-width: 100vw;
 }
 
 #loading{
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100%;
-  background-color: red;
   z-index: 999;
 }

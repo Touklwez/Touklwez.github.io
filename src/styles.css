@@ -18,4 +18,11 @@
 body{
   background-color: #efefef;
   cursor: crosshair;
+  overflow-x:  hidden !important;
+}
+
+.nopadding
+{
+  padding: 0px !important;
+  margin: 0px !important;
 }
