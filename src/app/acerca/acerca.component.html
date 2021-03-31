@@ -1,0 +1,93 @@
+<!--#region Banner-->
+<section id="banner" class="container-fluid d-flex flex-row justify-content-center">
+  <div id="profile-pic" class="d-flex flex-row justify-content-center align-content-center">
+    <img src="../../assets/about/profile.png" alt="">
+  </div>
+</section>
+
+<section id="banner-bottom-info">
+  <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+    <h1 id="nome" class="text-center">JOHN DOE</h1>
+    <q class="w-100 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius accusantium ratione.</q>
+    <hr>
+  </div>
+</section>
+<!--#endregion-->
+
+<!--#region Redes Sociais-->
+<section id="redes" class="container-fluid d-flex flex-row align-items-center justify-content-center">
+  <img class="sociais" src="../../assets/about/redes/rdes-email.svg" alt="">
+  <img class="sociais" src="../../assets/about/redes/redes-phone.svg" alt="">
+  <img class="sociais" src="../../assets/about/redes/redes-facebook.svg" alt="">
+  <img class="sociais" src="../../assets/about/redes/redes-linkedin.svg" alt="">
+</section>
+<!--#endregion-->
+
+<!--#region Texto Introducao-->
+<section id="introducao-texto" class="container-fluid d-flex flex-row align-items-center justify-content-center">
+  <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  </p>
+</section>
+<!--#endregion-->
+
+<!--#region Conhecimentos-->
+<section id="conhecimentos" class="container-fluid d-flex flex-column">
+  <h1 class="w-100 text-center">CONHECIMENTOS</h1>
+  <!--ROW 1-->
+  <div class="row d-flex flex-wrap flex-row justify-content-center align-items-center">
+    <div class="col-md-3 d-flex flex-column justify-content-start align-items-center">
+        <img class="conhecimentos-logos" src="../../assets/about/conhecimentos/htmlcssjs.png" alt="">
+        <h4>Html & Css & Js</h4>
+        <p class="text-center">Lorem ipsium  is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+    <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+        <img class="conhecimentos-logos" src="../../assets/about/conhecimentos/angular.png" alt="">
+        <h4>Angular & Ts</h4>
+        <p class="text-center">Lorem ipsium  is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+    <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+        <img class="conhecimentos-logos" src="../../assets/about/conhecimentos/bootstrap.png" alt="">
+        <h4>Bootstrap</h4>
+        <p class="text-center">Lorem ipsium  is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+  </div>
+  <!--ROW 2-->
+  <div class="row d-flex flex-wrap flex-row justify-content-center align-items-center mt-md-5 md-sm-3 mt-sm-0">
+    <div class="col-md-3 d-flex flex-column justify-content-start align-items-center">
+        <img class="conhecimentos-logos" src="../../assets/about/conhecimentos/mysql.png" alt="">
+        <h4>MySql</h4>
+        <p class="text-center">Lorem ipsium  is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+    <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+        <img class="conhecimentos-logos" src="../../assets/about/conhecimentos/figma.png" alt="">
+        <h4>FIGMA</h4>
+        <p class="text-center">Lorem ipsium  is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+    <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+        <img class="conhecimentos-logos" src="../../assets/about/conhecimentos/um-para-muitos.png" alt="">
+        <h4>OUTROS</h4>
+        <p class="text-center">Lorem ipsium  is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+  </div>
+</section>
+<!--#endregion-->
+
+<!--#region Percurso-->
+<section id="percurso" class="container-fluid d-flex flex-column align-content-center justify-content-center">
+  <h1 class="w-100 text-center">PERCURSO</h1>
+  <div id="box" class="container mainbox d-flex flex-md-row flex-sm-column flex-md-nowrap flex-sm-wrap" *ngFor="let titulo of titulos; let i = index">
+    <div class="box-titulo overflow-hidden">
+      <h3>
+        {{titulo}}
+      </h3>
+    </div>
+    <p id="box-texto" class="mt-auto mb-auto">
+      {{descricoes[i]}}
+    </p>
+  </div>
+</section>
+<!--#endregion-->

@@ -1,0 +1,256 @@
+/*#region Banner*/
+#banner{
+  width: 100vw;
+  height: 30vh;
+  margin-bottom: 10vh;
+  position: relative;
+  margin-left: 0vw;
+  background-image: url(../../assets/about/wallhaven-e7xw6w.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#profile-pic{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: -35%;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #181818;
+}
+#profile-pic img{
+  width: 100%;
+  height: auto;
+}
+
+#banner-bottom-info{
+  width: 100vw;
+  margin-left: 0vw;
+  margin-top: 14vh;
+}
+#banner-bottom-info h1{
+  width: 100%;
+  font-family: titles, cursive;
+  font-weight: bold;
+  font-size: 3rem;
+}
+#banner-bottom-info q{
+  font-family: titles, cursive;
+  font-size: 1.5rem;
+  margin-top: 1vh;
+}
+#banner-bottom-info hr{
+  width: 50%;
+  margin-top: 3vh;
+}
+/*#endregion Banner*/
+
+/*#region Redes Sociais*/
+#redes{
+  width: 100vw;
+  margin-top: 6vh;
+  margin-bottom: 6.3vh;
+}
+.sociais{
+  margin: 0vh 1.5vw 0vh 1.5vw;
+}
+/*#endregion Redes Sociais*/
+
+/*#region Introducao*/
+#introducao-texto{
+  width: 100vw;
+  margin-bottom: 5vh;
+}
+#introducao-texto p {
+  width: 48%;
+  font-family: texto;
+  font-size: 1.3rem;
+  line-height: 180%;
+}
+/*#endregion Banner*/
+
+/*#region Conhecimentos*/
+#conhecimentos h1{
+  font-family: titles, cursive;
+  margin: 4vh 0vw 6vh 0vw;
+}
+#conhecimentos h4{
+  font-family: titles, cursive;
+  font-size: 1.875rem;
+}
+#conhecimentos p{
+  width: 55%;
+  font-size: 1.25rem;
+  margin-bottom: 3vh;
+}
+.conhecimentos-logos{
+  width: 15%;
+  height: auto;
+  margin-bottom: 10px;
+}
+/*#endregion Conhecimentos*/
+
+
+/*#region Percurso*/
+#percurso{
+  width: 100vw;
+  font-family: titles, cursive;
+  margin: 10vh 0vw 7vh 0vw;
+}
+#percurso h1{
+  margin: 0vh 0vw 6vh 0vw;
+}
+.mainbox{
+  width: 45%;
+  overflow: hidden;
+  margin-bottom: 3vh;
+  padding: 0px;
+  background: #181818;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.box-titulo{
+  width: 20%;
+  height: 100%;
+  min-width: 20%;
+  background: #106573;
+  color: white;
+  margin: 0px;
+  margin: auto 0vw auto 0vw;
+  border-right: 10px solid #EFEFEF;
+  word-spacing: 100vw;
+  text-align: center;
+  padding: 1vh 0vw 1vh 0vw;
+}
+.box-titulo h3{
+  font-size: 1.875rem;
+  margin: 0px;
+}
+#box-texto{
+  font-family: texto;
+  color: white;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  padding: 0vh 1vw 0vh 1vw;
+}
+/*#endregion Percurso*/
+
+
+
+
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media screen and  (max-width: 769px), screen and (max-height: 700px) {
+
+  /* #region banner */
+  #banner{
+    margin-bottom: 8vh;
+    height: 20vh;
+    background-position: center;
+  }
+  #profile-pic{
+    height: 150px;
+    width: 150px;
+    bottom: -43%;
+  }
+  #banner-bottom-info h1{
+    font-size: 2.5rem;
+  }
+  #banner-bottom-info q{
+    font-size: 1.3rem;
+  }
+  #banner-bottom-info{
+    margin-top: 13vh;
+  }
+  #banner-bottom-info hr{
+    width: 90%;
+  }
+
+  /* #endregion banner */
+
+
+  /* #region redes */
+  #redes{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .sociais{
+    height: auto;
+    width: 12%;
+    margin: 0vh 5vw 0vh 5vw;
+  }
+  /*#endregion redes*/
+
+
+  /*#region introducao*/
+  #introducao-texto p{
+    width: 95%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  /*#endregion introducao*/
+
+
+  /*#region conhecimentos*/
+
+  #conhecimentos h1{
+    font-size: 2.5rem;
+    margin: 2vh 0vw 8vh 0vw;
+  }
+  .conhecimentos-logos{
+    width: 20%;
+  }
+  #conhecimentos p{
+    font-size: 1.00rem;
+    width: 55%;
+    margin-bottom: 10vh;
+  }
+  /*#endregion conhecimentos*/
+
+  /*#region percurso*/
+  #percurso{
+    font-family: titles, cursive;
+    margin: 3vh 0vw 1vh 0vw;
+    width: 100vw;
+  }
+  #percurso h1{
+    font-size: 2.5rem;
+    margin: -3vh 0vw 6vh 0vw;
+  }
+  .mainbox{
+    width: 90%;
+    flex-direction: column;
+  }
+  .box-titulo{
+    width: 100%;
+    border-right: none;
+    border-bottom: 4px solid #EFEFEF;
+    word-spacing: normal;
+  }
+  #box{
+    margin-bottom: 7vh;
+  }
+  #box-texto{
+    padding: 2vh 5px 2vh 5px;
+    font-size: 0.8rem;
+    height: auto;
+    width: 100%;
+    margin-left: 0px;
+  }
+  /* #endregion percurso */
+}
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media only screen and (min-width:  769.1px) and (max-width: 991.98px){
+
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media only screen and (min-width: 769px) and (max-width: 1300.98px) {
+
+}
+
+
