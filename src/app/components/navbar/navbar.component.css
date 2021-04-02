@@ -11,12 +11,17 @@ img{
 nav{
   width: 4%;
   height: 100vh;
-  background-color: #181818;
+  background-color: #18181860;
   position: fixed;
   left: 0;
   transition-duration: 1s;
   z-index: 998;
   display: flex;
+}
+nav:hover{
+
+  background-color: #181818;
+
 }
 
 svg{
@@ -34,6 +39,9 @@ path{
   fill: #0d92a7;
 }
 
+#hamburger{
+  display: none;
+}
 
 .navUp{
   bottom: 0;

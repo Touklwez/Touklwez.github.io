@@ -1,4 +1,4 @@
-import { HostListener } from '@angular/core';
+import { ElementRef, HostListener } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcercaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private elementRef : ElementRef) { }
 
   ngOnInit(): void {
   }
@@ -29,5 +29,9 @@ export class AcercaComponent implements OnInit {
     console.log(this.teste);
   }
 
-
+  ngAfterViewInit(){
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundImage = "none";
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundSize = "cover";
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundPosition = "center";
+ }
 }
