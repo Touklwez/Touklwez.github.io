@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap);
 /* Colors for the ripple elements.*/
 /* stylelint-disable-next-line material/theme-mixin-api */
 /* stylelint-disable-next-line material/theme-mixin-api */
@@ -3388,36 +3389,30 @@ textarea.form-control-lg{min-height:calc(1.5em + 1rem + 2px)}
 @media (min-width:1200px){.fs-1{font-size:2.5rem!important}.fs-2{font-size:2rem!important}.fs-3{font-size:1.75rem!important}.fs-4{font-size:1.5rem!important}}
 @media print{.d-print-inline{display:inline!important}.d-print-inline-block{display:inline-block!important}.d-print-block{display:block!important}.d-print-grid{display:grid!important}.d-print-table{display:table!important}.d-print-table-row{display:table-row!important}.d-print-table-cell{display:table-cell!important}.d-print-flex{display:flex!important}.d-print-inline-flex{display:inline-flex!important}.d-print-none{display:none!important}}
 /*# sourceMappingURL=bootstrap.min.css.map */
-/* You can add global styles to this file, and also import other style files */
 
+/* You can add global styles to this file, and also import other style files */
 @font-face{
   font-family: signature;
  src: url('SurfshirtSignature.ttf');
 }
-
 @font-face{
   src: url('Poppins-Light.ttf');
   font-family: texto;
 }
-
 :root{
   --mainFontColor: #181818;
 }
-
 body{
   background-color: #efefef;
   cursor: crosshair;
   overflow-x:  hidden !important;
 }
-
 .nopadding
 {
   padding: 0px !important;
   margin: 0px !important;
 }
-
 html, body { height: 100%; }
-
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
