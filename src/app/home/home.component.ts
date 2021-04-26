@@ -12,6 +12,10 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showMenu(){
+    document.getElementById("menu").style.display = "flex";
+  }
+
 }
 
 

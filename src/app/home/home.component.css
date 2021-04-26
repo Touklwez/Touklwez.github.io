@@ -8,6 +8,12 @@
  src: url(../../assets/homeAssets/SurfshirtSignature.ttf);
 }
 
+
+
+#menu{
+  display: none;
+}
+
 #background{
   z-index: 1;
   width: 100vw;
@@ -66,6 +72,8 @@
 }
 
 
+.slide-in-bottom{-webkit-animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 
 
 
@@ -99,7 +107,7 @@
 
 /* // Medium devices (tablets, less than 992px) */
 @media only screen and (min-width:  769.1px) and (max-width: 991.98px){
-  
+
 }
 
 

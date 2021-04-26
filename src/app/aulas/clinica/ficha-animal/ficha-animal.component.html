@@ -1,0 +1,29 @@
+
+<section id="landing">
+  <div id="glass"></div>
+  <!-- <img id="bird" src="../../../../assets/ficha-animal/bird.png" alt=""> -->
+
+  <video width="320" height="240" nocontrols autoplay loop id="bird">
+    <source src="../../../../assets/ficha-animal/background-video.mp4" type="video/mp4">
+  </video>
+
+  <img id="logo" src="../../../../assets/ficha-animal/logo.png" alt="">
+  <div id="redes">
+    <img class="redes-icons" src="../../../../assets/ficha-animal/icons/facebook.png" alt="">
+    <img class="redes-icons" src="../../../../assets/ficha-animal/icons/instagram.png" alt="">
+    <img class="redes-icons" src="../../../../assets/ficha-animal/icons/twitter.png" alt="">
+  </div>
+  <img id="scroller" src="../../../../assets/ficha-animal/icons/scroll-arrow.png" alt="">
+</section>
+
+
+<select [(ngModel)]='animal' #referenciaParaEsteSelect>
+  <option *ngFor="let animal of especie">{{animal}}</option>
+</select>
+
+<app-escolhe-animal [referencia] = 'animal'></app-escolhe-animal>
+
+<h1 class="mt-5 mb-5">REGISTADOS</h1>
+<div *ngFor="let animal of animais">
+  <app-animal-reader [animalSerLido]='animal'></app-animal-reader>
+</div>

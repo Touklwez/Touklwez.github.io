@@ -1,0 +1,51 @@
+<section id="calculadora-main" class="d-flex flex-column justify-content-center align-items-center">
+
+  <div id="calculadora" class="container nopadding">
+    <div id="visor" class="container">
+      <div id="visor-top" class="container d-flex  justify-content-center align-items-center pt-0">
+        <p class="nopadding">{{contaCima}}</p>
+      </div>
+      <p id="calculo">{{resultado}}</p>
+    </div>
+    <div id="calculadora-botoes-body" class="container d-flex  justify-content-center align-items-center mt-4 mb-4">
+      <div id="calculadora-operacoes" class="container d-flex flex-row  justify-content-around align-items-center">
+        <p (click)="numeros('+')">+</p>
+        <p (click)="numeros('-')">-</p>
+        <img src="../../../assets/calculadora/igual.svg" alt="" (click)="reset()">
+        <p (click)="numeros('*')">x</p>
+        <p (click)="numeros('/')">/</p>
+      </div>
+    </div>
+
+    <div id="botoes-linha1" class="container linhas">
+      <ul class="d-flex flex-row  justify-content-around align-items-center nopadding botoes">
+        <li (click)="numeros(7)">7</li>
+        <li (click)="numeros(8)">8</li>
+        <li (click)="numeros(9)">9</li>
+      </ul>
+    </div>
+    <div id="botoes-linha2" class="container linhas mt-2">
+      <ul class="d-flex flex-row  justify-content-around align-items-center nopadding botoes">
+        <li (click)="numeros(4)">4</li>
+        <li (click)="numeros(5)">5</li>
+        <li (click)="numeros(6)">6</li>
+      </ul>
+    </div>
+    <div id="botoes-linha3" class="container linhas mt-2">
+      <ul class="d-flex flex-row  justify-content-around align-items-center nopadding botoes">
+        <li (click)="numeros(1)">1</li>
+        <li (click)="numeros(2)">2</li>
+        <li (click)="numeros(3)">3</li>
+      </ul>
+    </div>
+    <div id="botoes-linha3" class="container linhas mt-2 mb-4">
+      <ul class="d-flex flex-row  justify-content-around align-items-center nopadding botoes">
+        <li (click)="numeros('.')">.</li>
+        <li (click)="numeros(0)">0</li>
+        <li (click)="apagar()"><</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+

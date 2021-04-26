@@ -30,9 +30,12 @@ svg{
   height: auto;
   cursor: crosshair;
 }
-
+svg:hover  path{
+  fill: #66a4ad;
+}
 path{
   fill: white;
+  transition-duration: .4s;
 }
 
 .active path{
@@ -64,13 +67,19 @@ path{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    flex-direction: row !important;
   }
+  nav:hover{
+    background: rgba( 255, 255, 255, 0.55 );
+  }
+
   svg{
-    margin: auto 0vw auto 0vw;
-    width: 9%;
+    margin: auto;
+    width: 7%;
     height: auto;
     cursor: crosshair;
   }
+
   path{
     fill: #6b6767;
   }

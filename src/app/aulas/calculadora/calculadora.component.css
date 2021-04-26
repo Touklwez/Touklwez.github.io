@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+.nopadding{
+  margin: 0;
+  padding: 0;
+}
+
+#calculadora-main
+{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../../assets/calculadora/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+#calculadora
+{
+  width: 20vw;
+  height: auto;
+  background-color: #106673e1;
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#visor{
+  height: auto;
+  background-color: white;
+  color: white;
+  padding: 1vh 0vw 0vh 0vw;
+  overflow: hidden;
+}
+#visor-top{
+  height: auto;
+  min-width: 30%;
+  width: 30%;
+  max-width: auto;
+  border-radius: 50vh;
+  padding: .5vh 0vw .2vh 0vw;
+  background-color: #106673ad;
+}
+#visor-top p{
+  font-family: 'Roboto Slab', serif;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+}
+#calculo{
+  color: black;
+  font-size: 2rem;
+  width: 100%;
+  text-align: end;
+  padding-right: 1.5vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+
+#calculadora-operacoes{
+  height: auto;
+  min-height: 5vh;
+  width: 70%;
+  background-color: #ffffff54;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50vh;
+}
+#calculadora-operacoes p{
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+}
+#calculadora-operacoes p:hover{
+  color: #1196aa;
+}
+#botao-igual{
+  border-radius: 50%;
+  background-color: #689EA6;
+}
+#calculadora-operacoes img{
+  width: 18%;
+  height: auto;
+  padding: 1vh 0vw 1vh 0vw;
+}
+
+
+#botoes-linha1{
+  width: 100%;
+}
+#botoes-linha2{
+  width: 100%;
+}
+#botoes-linha3{
+  width: 100%;
+}
+.botoes li{
+  list-style: none;
+  display: inline-block;
+  transition-duration: 1s;
+  width: calc(100% / 3);
+  text-align: center;
+}
+.botoes li:hover{
+  background-color: #1196aa;
+}
+
+.linhas{
+  margin: 2vh 0vw 2vh 0vw;
+  font-size: 38px;
+}
+
+
+
+
+
+@media screen and  (max-width: 769px), screen and (max-height: 700px){
+
+  #calculadora{
+    width: 90vw;
+  }
+  #visor-top{
+    overflow: hidden;
+    width: 30%;
+    max-width: 80%;
+    border-radius: 50vh;
+    background-color: #106673ad;
+  }
+}

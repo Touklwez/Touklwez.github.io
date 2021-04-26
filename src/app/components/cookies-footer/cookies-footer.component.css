@@ -1,0 +1,90 @@
+#cookie-footer{
+  width: 100vw;
+  height: auto;
+  position: fixed;
+  background-color: #18181860;
+  z-index: 998;
+  bottom: 0;
+  color:  white;
+  display: flex;
+}
+
+.introducao{
+  height: auto;
+  margin: auto 0vw auto 0vw;
+  padding-left: 7%;
+}
+.introducao h1{
+  margin: 1vh 0vw 1vh 0vw;
+  font-family: titles;
+  font-size: 1.7rem;
+}
+.introducao p{
+  width: 70%;
+  margin: 0vh 0vw 2vh 0vw;
+  font-family: texto;
+}
+
+
+#cookies-decisao{
+  height: 100%;
+  margin: auto;
+
+}
+
+.cookie-buttons{
+  display: block;
+  text-align: center;
+  margin: auto 1vw auto 1vw;
+  color: white;
+  background-color: #16161600;
+  padding: 10px 23px 10px 23px;
+  border: none;
+  border-bottom: 2px solid #10b4ce;
+  transition-duration: 1s;
+}
+.cookie-buttons:nth-child(1){
+  display: block;
+  text-align: center;
+  margin: auto 1vw auto 1vw;
+  color: white;
+  background-color: #16161600;
+  padding: 10px 23px 10px 23px;
+  border: 2px solid white;
+  transition-duration: 1s;
+  border: none;
+  text-decoration: underline;
+}
+
+/* Cookie button accept  */
+.cookie-buttons:hover:nth-child(2){
+  background-color: #106573;
+  border-color: #106573;
+}
+
+
+
+.slide-in-bottom{-webkit-animation:slide-in-bottom 1.0s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-bottom 1.5s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1;}}@keyframes slide-in-bottom{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+.slide-out-bottom{-webkit-animation:slide-out-bottom 1s cubic-bezier(.55,.085,.68,.53) both;animation:slide-out-bottom 1s cubic-bezier(.55,.085,.68,.53) both}
+@-webkit-keyframes slide-out-bottom{0%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}100%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}}@keyframes slide-out-bottom{0%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}100%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}}
+
+
+@media screen and  (max-width: 769px), screen and (max-height: 700px){
+
+  #cookie-footer{
+    height: 100%;
+    background-color: #16161600;
+
+  }
+  .introducao{
+    background-color: #181818c2;
+  }
+  #cookies-decisao{
+    background-color: #181818c2;
+
+  }
+}
+
+
