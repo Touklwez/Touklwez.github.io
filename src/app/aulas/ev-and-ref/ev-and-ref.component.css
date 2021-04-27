@@ -1,0 +1,38 @@
+#components{
+  width: 100vw;
+  height: 100vh;
+}
+
+#chand{
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 8vh;
+  left: 50%;
+  width: 17%;
+  height: auto;
+}
+
+#luz{
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 24vh;
+  left: 50%;
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 166px 287.5px 166px;
+  border-color: transparent transparent #EEE9BF transparent;
+
+  filter: blur(50px);
+
+}
+
+
+#cor-input{
+  width: 10%;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -9,12 +9,10 @@
   width: 100%;
   height: 100%;
   z-index: 2;
-
   background: rgba(27, 71, 82, 0.692);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 20.0px );
-  -webkit-backdrop-filter: blur( 20.0px );
-  border-radius: 10px;
+  backdrop-filter: blur( 5.0px );
+  -webkit-backdrop-filter: blur( 5.0px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 #bird{
@@ -26,11 +24,23 @@
   width: 100vw;
   height: 100%;
   object-fit: cover;
+  display: none;
+}
+#video{
+  z-index: 1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  display: inline;
 }
 #logo{
   position: absolute;
   bottom: 1vw;
-  right: 4vw;
+  right: 3vw;
   z-index: 3;
   width: 10%;
   height: auto;
@@ -79,4 +89,38 @@ h1{
     60% {
       transform: translateY(-15px);
     }
+}
+
+
+@media screen and  (max-width: 769px), screen and (max-height: 700px){
+  #video{
+    display: none;
+  }
+  #bird{
+    display: inline;
+  }
+  #logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    translate: 50%;
+    z-index: 3;
+    width: 50%;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
+  #redes{
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    left: unset;
+    top:  0;
+  }
+  .redes-icons{
+    display: none;
+  }
+  #scroller{
+    width: 5%;
+  }
 }

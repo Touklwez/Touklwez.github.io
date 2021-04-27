@@ -42,3 +42,35 @@
 .informacoes-tipo{
   margin-left: 8vw;
 }
+
+
+
+@media screen and  (max-width: 769px), screen and (max-height: 700px){
+
+  .container-animais{
+    width: 90vw;
+    border-radius: 0px;
+    margin-bottom: 7vh;
+    padding: 0vh 0vw 6vh 0vw;
+  }
+
+  .foto-circle{
+    margin: 1vh 0vw 0vh 0vw;
+    width: 100px;
+    height: 100px;
+  }
+  .foto{
+    height: 85%;
+  }
+  #card h4{
+    font-size: 1.8rem;
+  }
+  .informacoes p{
+    font-family: robotoThin;
+    font-size: 1.3rem;
+    margin: .5vh 0vw .5vh 1vw;
+  }
+  .informacoes-tipo{
+    margin-left: 20%;
+  }
+}

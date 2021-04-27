@@ -23,6 +23,10 @@ import { FichaAnimalComponent } from './aulas/clinica/ficha-animal/ficha-animal.
 import { AnimalReaderComponent } from './aulas/clinica/animal-reader/animal-reader.component';
 import { EscolheAnimalComponent } from './aulas/clinica/escolhe-animal/escolhe-animal.component';
 import { FormsModule } from '@angular/forms';
+import { EvAndRefComponent } from './aulas/ev-and-ref/ev-and-ref.component';
+
+
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,8 @@ import { FormsModule } from '@angular/forms';
     ProjetosComponent,
     FichaAnimalComponent,
     AnimalReaderComponent,
-    EscolheAnimalComponent
+    EscolheAnimalComponent,
+    EvAndRefComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +50,8 @@ import { FormsModule } from '@angular/forms';
     NoopAnimationsModule,
     MatSlideToggleModule,
     MatChipsModule,
-    FormsModule
+    FormsModule,
+    MatInputModule
   ],
   providers: [  {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]

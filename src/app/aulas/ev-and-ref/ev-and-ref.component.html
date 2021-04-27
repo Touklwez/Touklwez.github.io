@@ -1,0 +1,13 @@
+<section id="components" class="d-flex flex-column justify-content-center align-content-center">
+  <div id="luz" #luz [style.border-bottom-color]="cor"></div>
+  <img id="chand" src="../../../assets/EVandREF/chand.svg" alt="">
+
+  <mat-form-field id="cor-input">
+    <mat-label>Escreva uma cor!</mat-label>
+    <input matInput placeholder="Escreva Uma cor" #teste id="cor-textarea" (input)='changeColor(teste.value)'>
+  </mat-form-field>
+</section>
+
+
+
+
