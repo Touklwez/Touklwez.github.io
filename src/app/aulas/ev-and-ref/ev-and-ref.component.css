@@ -1,6 +1,7 @@
 #components{
   width: 100vw;
   height: 100vh;
+  background-color: #EFEFEF;
 }
 
 #chand{
@@ -24,15 +25,21 @@
   border-width: 0 166px 287.5px 166px;
   border-color: transparent transparent #EEE9BF transparent;
 
-  filter: blur(50px);
-
+  filter: blur(70px);
+  transition-duration: 1s;
 }
 
 
 #cor-input{
-  width: 10%;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: auto;
+  margin-right: 1vw;
+}
+
+
+.buttons{
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 1vh;
+  right: 1vw;
 }

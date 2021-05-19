@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
     document.getElementById("menu").style.display = "flex";
   }
 
+
 }
 
 

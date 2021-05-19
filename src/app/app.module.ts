@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HostListener, Component } from "@angular/core";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,9 +23,12 @@ import { AnimalReaderComponent } from './aulas/clinica/animal-reader/animal-read
 import { EscolheAnimalComponent } from './aulas/clinica/escolhe-animal/escolhe-animal.component';
 import { FormsModule } from '@angular/forms';
 import { EvAndRefComponent } from './aulas/ev-and-ref/ev-and-ref.component';
+import { ListaTelefonicaComponent } from './aulas/clinica/lista-telefonica/lista-telefonica.component';
 
 
 import {MatInputModule} from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import {MatInputModule} from '@angular/material/input';
     FichaAnimalComponent,
     AnimalReaderComponent,
     EscolheAnimalComponent,
-    EvAndRefComponent
+    EvAndRefComponent,
+    ListaTelefonicaComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,10 @@ import {MatInputModule} from '@angular/material/input';
     MatSlideToggleModule,
     MatChipsModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+
   ],
   providers: [  {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]

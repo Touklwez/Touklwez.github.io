@@ -1,4 +1,6 @@
+import { HtmlAstPath } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-ev-and-ref',
@@ -18,5 +20,22 @@ export class EvAndRefComponent implements OnInit {
   changeColor(corR:string){
     this.cor =   corR;
   }
+
+  ApagarLuz(luz:HTMLElement){
+    if(luz.style.visibility == "visible"){
+      luz.style.visibility = "hidden";
+    }else{
+      luz.style.visibility = "visible";
+    }
+  }
+
+  RainbowLuz(luz:HTMLElement){
+
+    luz.style.visibility = "visible";
+    this.cor  = '#'+ ('000000' + (Math.random()*0xFFFFFF<<0).toString(16)).slice(-6)
+
+  }
+
+
 
 }

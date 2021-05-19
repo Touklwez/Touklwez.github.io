@@ -1,0 +1,7 @@
+<section id="main" class="container-fluid d-flex flex-column justify-content-center align-items-center">
+  <div *ngFor="let lista of phoneService.phoneList; let i = index" class="d-flex flex-row ">
+    <p (mouseover)="teste()"> {{phoneService.phoneList[i].nome}}</p>
+    <p (mouseover)="teste()"> {{phoneService.phoneList[i].idade}}</p>
+    <p (mouseover)="teste()"> {{phoneService.phoneList[i].numero}}</p>
+  </div>
+</section>

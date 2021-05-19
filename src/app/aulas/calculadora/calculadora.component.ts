@@ -30,7 +30,7 @@ export class CalculadoraComponent implements OnInit {
   }
 
   apagar(){
-    this.conta = this.conta.slice(0, -1);
-    this.contaCima = this.conta.slice(0, -1);
+    this.conta = this.conta.substring(0, this.conta.length - 1);
+    this.contaCima = this.contaCima.substring(0, this.contaCima.length - 1);
   }
 }
