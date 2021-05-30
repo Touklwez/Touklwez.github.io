@@ -1,0 +1,30 @@
+<section id="chuck" class="d-flex flex-column align-items-start justify-content-center">
+
+  <img id="imagem" src="../../../assets/chuck/image-chuck.png" alt="">
+
+  <h1>CHUCK NORRIS JOKES</h1>
+  <p id="joke">{{piada}}</p>
+
+  <div id="buttons" class="d-flex fle-row">
+
+    <button mat-button (click)="GetJoke()">
+      <mat-icon>exposure_plus_1</mat-icon>
+      New
+    </button>
+    <button mat-button (click)="getJokeFromWord(joke.value)">
+      <mat-icon>search</mat-icon>
+      Search
+    </button>
+
+
+
+
+    <input type="text" #joke>
+  </div>
+
+
+</section>
+
+<div *ngFor="let item of piadas.result">
+  <h3 class="m-5">{{item.value}}</h3>
+</div>

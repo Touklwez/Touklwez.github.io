@@ -1,0 +1,19 @@
+<div class="container-fluid d-flex flex-column align-items-center justify-content-center mt-5">
+
+  <mat-form-field appearance="fill" classs="mt-5">
+    <mat-label>Nome</mat-label>
+    <input matInput #nome>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Preço</mat-label>
+    <input matInput #preco>
+  </mat-form-field>
+
+  <button mat-raised-button (click)="AdicionarLista(nome.value, preco.value)" class="mb-5">Add</button>
+
+  <div *ngFor="let artigo of listaService.listaCompras" class="d-flex justify-content-between align-items-center" id="info-holder">
+    <p class="m-5" [ngClass]="{'comprados' : artigo.carrinho}">{{artigo.nome}} {{artigo.preco}}€</p>
+  </div>
+
+</div>

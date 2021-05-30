@@ -4,6 +4,10 @@
   position: absolute;
   z-index: -1;
 }
+#ultimos-trabalhos{
+  background-image: url("../../assets/trabalhos/background.png");
+  min-height: 100vh;
+}
 #ultimos-trabalhos h1{
   color: white;
   font-family: titles;

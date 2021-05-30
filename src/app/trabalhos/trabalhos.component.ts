@@ -12,10 +12,4 @@ export class TrabalhosComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  //Alterar Background
-  ngAfterViewInit(){
-    this.elementRef.nativeElement.ownerDocument.body.style.backgroundImage = "url('../../assets/trabalhos/background.png')";
-    this.elementRef.nativeElement.ownerDocument.body.style.backgroundSize = "cover";
- }
-
 }

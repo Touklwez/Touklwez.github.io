@@ -1,0 +1,59 @@
+#notfound{
+  width: 100vw;
+  height: 100vh;
+  background-color: #21262d;
+}
+
+#planeta{
+  width: 15%;
+  height: auto;
+  margin-left: 10vw;
+  z-index: 999;
+}
+
+#titulo{
+  font-family: 'Faustina', serif;
+  color: white;
+  font-size: 10rem;
+  margin-left: 4vw;
+}
+#texto{
+  color: white;
+  font-family: 'Faustina', serif;
+  color: white;
+  font-size: 6rem;
+  margin: 0;
+  line-height: 60px;
+  margin-left: 5vw;
+  padding: 0;
+  padding-right: 2vw;
+}
+#spaceman{
+  position: absolute;
+  right: -1vw;
+  animation: linear infinite;
+  animation-name: spaceman;
+  animation-duration: 7s;
+}
+
+#estrelas{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+
+
+@keyframes spaceman {
+  0%   {rotate: 10deg;}
+  50%  {rotate: -10deg}
+  100%  {rotate: 10deg}
+}
+
+
+
+.slide-in-right{-webkit-animation:slide-in-right 3s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-right 3s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:1}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:1}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+
+.shake-horizontal{-webkit-animation:shake-horizontal 10s cubic-bezier(.455,.03,.515,.955) infinite both;animation:shake-horizontal 20s cubic-bezier(.455,.03,.515,.955) infinite both}
+@-webkit-keyframes shake-horizontal{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%{-webkit-transform:translateX(10px);transform:translateX(10px)}80%{-webkit-transform:translateX(8px);transform:translateX(8px)}90%{-webkit-transform:translateX(-8px);transform:translateX(-8px)}}@keyframes shake-horizontal{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%{-webkit-transform:translateX(10px);transform:translateX(10px)}80%{-webkit-transform:translateX(8px);transform:translateX(8px)}90%{-webkit-transform:translateX(-8px);transform:translateX(-8px)}}

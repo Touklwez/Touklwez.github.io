@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit(): void {
   }
@@ -16,6 +17,10 @@ export class HomeComponent implements OnInit {
     document.getElementById("menu").style.display = "flex";
   }
 
+  ChangePage(){
+    console.log("scrolling")
+    this.router.navigate(['/about']);
+  }
 
 }
 

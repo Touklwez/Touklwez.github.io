@@ -1,9 +1,9 @@
 <app-projetos id="menu"></app-projetos>
-<img id="background" src="../../assets/homeAssets/wallpaper.png" alt="" class="position-absolute">
+<img id="background" src="../../assets/homeAssets/wallpaper.jpg" alt="" class="position-absolute">
 
-<div id="main" class="container-fluid d-flex flex-column align-items-start justify-content-center">
+<div id="main" class="container-fluid d-flex flex-column align-items-start justify-content-center" (wheel)="ChangePage()">
 
-  <h1>WELCOME</h1>
+  <h1>AYO! FELLA</h1>
   <p>Este é o meu portfólio, a partir daqui poderás contactar me ou saber mais sobre mim.</p>
   <button (click)="showMenu()">SCHOOL - PROJECTS</button>
   <a class="position-absolute" href="" id="assinatura">Flavio Costa</a>

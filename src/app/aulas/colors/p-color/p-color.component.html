@@ -1,0 +1,12 @@
+<section class="d-flex align-items-center justify-content-center" id="pcolor">
+
+  <mat-form-field id="cor-input">
+    <mat-label>Escreva uma cor!</mat-label>
+    <input matInput placeholder="Escreva Uma cor" #teste id="cor-textarea" (input)="MudarCor(corvalue.value)" #corvalue>
+  </mat-form-field>
+  <button mat-button [routerLink]="['/p-color', cor]" routerLinkActive="router-link-active">TROCAR</button>
+</section>
+
+<router-outlet></router-outlet>
+
+

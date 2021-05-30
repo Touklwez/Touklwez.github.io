@@ -1,0 +1,11 @@
+#navigation{
+  width: 100vw;
+  background-color: #EFEFEF;
+}
+#navigation img{
+  width: 4%;
+  height: auto;
+  margin-top: 2vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}

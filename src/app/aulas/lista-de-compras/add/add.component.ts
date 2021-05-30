@@ -1,0 +1,30 @@
+import { Component, OnInit } from '@angular/core';
+import { Artigo } from 'src/app/class/artigo';
+import { ListaService } from 'src/app/services/lista.service';
+
+@Component({
+  selector: 'app-add',
+  templateUrl: './add.component.html',
+  styleUrls: ['./add.component.css']
+})
+export class AddComponent implements OnInit {
+  listaService : ListaService;
+
+  constructor(private lista : ListaService) {
+    this.listaService = lista;
+
+  }
+
+  ngOnInit(): void {
+
+  }
+
+  AdicionarLista(nome, preco){
+    if(nome.length > 0 && isNaN(preco) == false){
+      this.listaService.listaCompras.push(new Artigo(nome, preco));
+    }else{
+      console.log("Verifique os campos!")
+    }
+  }
+
+}
