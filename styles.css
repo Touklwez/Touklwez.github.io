@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Faustina:ital,wght@1,600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap);
 /* Colors for the ripple elements.*/
 /* stylelint-disable-next-line material/theme-mixin-api */
 /* stylelint-disable-next-line material/theme-mixin-api */
@@ -3391,28 +3393,36 @@ textarea.form-control-lg{min-height:calc(1.5em + 1rem + 2px)}
 /*# sourceMappingURL=bootstrap.min.css.map */
 
 /* You can add global styles to this file, and also import other style files */
+
 @font-face{
   font-family: signature;
  src: url('SurfshirtSignature.ttf');
 }
+
 @font-face{
   src: url('Poppins-Light.ttf');
   font-family: texto;
 }
+
 :root{
   --mainFontColor: #181818;
 }
+
 body{
   background-color: #efefef;
   cursor: crosshair;
   overflow-x:  hidden !important;
+  scroll-behavior: smooth;
 }
+
 .nopadding
 {
   padding: 0px !important;
   margin: 0px !important;
 }
+
 html, body { height: 100%; }
+
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
